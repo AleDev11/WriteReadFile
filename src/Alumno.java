@@ -3,12 +3,6 @@ public class Alumno {
     private String Apellido;
     private int Edad;
 
-    /*public Alumno(String Nombre, String Apellido, int Edad) {
-        this.Nombre = Nombre;
-        this.Apellido = Apellido;
-        this.Edad = Edad;
-    }*/
-
     public String getNombre() {
         return Nombre;
     }
@@ -31,12 +25,5 @@ public class Alumno {
 
     public void setEdad(int edad) {
         Edad = edad;
-    }
-
-    public void addAlumno(String Nombre, String Apellido, int Edad) {
-        boolean IsCorrect = false;
-        while (!IsCorrect) {
-
-        }
     }
 }
