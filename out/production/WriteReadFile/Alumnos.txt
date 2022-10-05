@@ -1,4 +1,0 @@
-
- Nombre del alumno: Fernando
- Apellido del alumno: Azul
- Edad del alumno: 19

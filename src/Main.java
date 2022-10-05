@@ -85,7 +85,7 @@ public class Main {
                 }
             }
 
-            writeFile.writeInFile("src\\Alumnos.txt", "\n Nombre del alumno: " + alumno.getNombre() + "\n Apellido del alumno: " + alumno.getApellido() + "\n Edad del alumno: " + alumno.getEdad());
+            writeFile.writeInFile("src\\db\\Alumnos.txt", "\n Nombre del alumno: " + alumno.getNombre() + "\n Apellido del alumno: " + alumno.getApellido() + "\n Edad del alumno: " + alumno.getEdad());
         } catch (Exception e) {
             System.out.println("Error: " + e);
         }
