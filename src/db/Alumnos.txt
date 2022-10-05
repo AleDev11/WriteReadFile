@@ -1,0 +1,7 @@
+
+ Nombre del alumno: Hola
+ Apellido del alumno: Cahao
+ Edad del alumno: 22
+ Nombre del alumno: Julai
+ Apellido del alumno: CAH
+ Edad del alumno: 22
