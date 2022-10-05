@@ -22,13 +22,6 @@ public class ManagerFile {
         }
     }
 
-    public static void deleteFile(String fileName) {
-        File file = new File(fileName);
-        if (file.exists()) {
-            file.delete();
-        }
-    }
-
     public static boolean checkText(String data) {
         boolean isString = true;
         for (int i = 0; i < data.length(); i++) {
