@@ -1,3 +1,4 @@
+import java.io.File;
 import java.util.Scanner;
 
 public class Main {
@@ -13,6 +14,7 @@ public class Main {
 
         managerFile.checkFolder("src\\db");
         managerFile.checkFile("src\\db\\Alumnos.txt");
+        managerFile.checkFile("src\\db\\Alumnos-copia.txt");
 
         while(InMenu == true) {
             System.out.println("1 | Agregar Alumno");
@@ -40,7 +42,6 @@ public class Main {
                     break;
             }
         }
-
     }
 
     public static void addStudent() {
@@ -100,6 +101,20 @@ public class Main {
     }
 
     public static void writeAndReadFile() {
-        
+
+        String line;
+
+        try {
+            Scanner scanner = new Scanner(new File("src\\db\\Alumnos.txt"));
+            while (scanner.hasNextLine()) {
+                line = scanner.nextLine();
+                writeFile.writeInFile("src\\db\\Alumnos-copia.txt", line + "\n");
+                System.out.println("Escrito en la copia: " + line);
+            }
+
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
+
     }
 }

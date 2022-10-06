@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ReadFile {
 
-    public void readFile(String s) {
+    public String readFile(String s) {
         try {
             File file = new File(s);
             Scanner scanner = new Scanner(file);
@@ -16,5 +16,6 @@ public class ReadFile {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+        return s;
     }
 }
