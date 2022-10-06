@@ -22,24 +22,29 @@ public class Main {
             System.out.println("2 | Escribir y Leer Archivo copia");
             System.out.println("4 | Salir");
             System.out.print("Ingrese una opcion: ");
-            int option = scanner.nextInt();
+            try {
+                int option = scanner.nextInt();
 
-            switch (option) {
-                case 1:
-                    addStudent();
-                    break;
-                case 2:
-                    showAllStudents();
-                    break;
-                case 3:
-                    writeAndReadFile();
-                    break;
-                case 4:
-                    InMenu = false;
-                    break;
-                default:
-                    System.out.println("Opcion incorrecta");
-                    break;
+                switch (option) {
+                    case 1:
+                        addStudent();
+                        break;
+                    case 2:
+                        showAllStudents();
+                        break;
+                    case 3:
+                        writeAndReadFile();
+                        break;
+                    case 4:
+                        InMenu = false;
+                        break;
+                    default:
+                        System.out.println("Opcion incorrecta");
+                        break;
+                }
+            } catch (Exception e) {
+                InMenu = false;
+                System.out.println("Que hace no pongas cosas que no son numeros");
             }
         }
     }
