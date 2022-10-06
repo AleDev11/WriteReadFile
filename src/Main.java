@@ -19,7 +19,7 @@ public class Main {
         while(InMenu == true) {
             System.out.println("1 | Agregar Alumno");
             System.out.println("2 | Mostrar Todos Los Alumnos");
-            System.out.println("2 | Escribir y Leer Archivo copia");
+            System.out.println("3 | Escribir y Leer Archivo copia");
             System.out.println("4 | Salir");
             System.out.print("Ingrese una opcion: ");
             try {

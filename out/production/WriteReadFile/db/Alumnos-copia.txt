@@ -1,8 +1,4 @@
 
  Nombre del alumno: Hola
  Apellido del alumno: Chao
- Edad del alumno: 11
-
- Nombre del alumno: Juan
- Apellido del alumno: Pedro
- Edad del alumno: 44
+ Edad del alumno: 22
